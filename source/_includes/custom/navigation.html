@@ -11,12 +11,23 @@
 
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
+                <li {% if page.navbar == 'About' %}class="active"{% endif %}>
+                <a href="{{ root_url }}/about">About</a>
+                </li>
+                <li {% if page.navbar == 'Projects' %}class="active"{% endif %}>
+                    <a href="{{ root_url }}/projects">Projects</a>
+                </li>
                 <li {% if page.navbar == 'Blog' %}class="active"{% endif %}>
-                    <a href="{{ root_url }}/">Blog</a>
+                    <a href="{{ root_url }}/blog">Blog</a>
                 </li>
-                <li {% if page.navbar == 'Archives' %}class="active"{% endif %}>
-                    <a href="{{ root_url }}/blog/archives">Archives</a>
-                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        Projects <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{{ root_url }}/projects/planning-common">Planning Common</a></li>
+                        <li><a href="{{ root_url }}/projects/pddl-parser">PDDL Parser</a></li>
+                    </ul>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li>
