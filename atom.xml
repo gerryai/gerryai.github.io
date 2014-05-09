@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
+  <title><![CDATA[Gerry AI]]></title>
   <link href="http://gerryai.github.io/atom.xml" rel="self"/>
   <link href="http://gerryai.github.io/"/>
-  <updated>2014-04-29T16:09:10+01:00</updated>
+  <updated>2014-05-09T15:42:52+01:00</updated>
   <id>http://gerryai.github.io/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
-    
+    <name><![CDATA[David Edwards]]></name>
+    <email><![CDATA[david@gerryai.org]]></email>
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
